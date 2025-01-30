@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BAZIN CHEZ MARIE</title>
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style>
+        /* Custom styles for the product gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                        <i class="fas fa-spa"></i>BAZIN CHEZ MARIE
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">produit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.php">commande</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+    <!--/inner-page-->
+    <div class="inner-banner py-5">
+        <section class="w3l-breadcrumb text-left py-sm-5 ">
+            <div class="container">
+                <div class="w3breadcrumb-gids">
+                    <div class="w3breadcrumb-left text-left">
+                        <h2 class="inner-w3-title">produit</h2>
+                        <p class="inner-page-para mt-2">NOS produit</p>
+                    </div>
+                    <div class="w3breadcrumb-right">
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> produit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--//inner-page-->
+    <!--/product-gallery-->
+    <div class="w3l-3-grids py-5" id="grids-3">
+        <div class="container py-md-5 py-2">
+            <div class="abin-top-content text-center mb-md-5 mb-4">
+                <h6 class="title-subw3hny">produit</h6>
+                <h3 class="title-w3l mb-3">Nos Produits</h3>
+                <p class="abinfo-para">Découvrez notre gamme variée de bazin de haute qualité.</p>
+                <p class="abinfo-para"><li>top vente</li></p>
+            </div>
+            <iframe src="https://www.sitodocenza.it/public/MyBox/user/V76tbWJR49ozOX7_fallu/file/steller/public_html/iframe_1.html" width="1200" height="700" frameborder="0" scrolling="no" style="border:none;"></iframe>
+
+                <!-- Ajoutez plus d'images de produit ici -->
+            </div>
+        </div>
+    </div>
+    <!--//product-gallery-->
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+
+
+    
+   
+    <!--/footer-->
+    <footer class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container">
+                <div class="row footer-top-29">
+                    <div class="col-lg-3 col-md-6 footer-list-29 footer-1 pe-lg-5">
+                        <div class="bottom-copies">
+                            <h2><a class="navbar-brand" href="index.html">
+                                    <i class="fas fa-spa"></i>BAZIN CHEZ MARIE 
+                                </a></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-3">
+                        <p class="copy-footer-29 text-center">BAZIN CHEZ MARIE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>TEL:77 544 99 21</b></p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-list-29 mt-lg-0 mt-4">
+                        <div class="main-social-footer-29">
+                            <a href="https://www.facebook.com/share/yFwvSJjq12eEN2h2/"target="_blank"  class="facebook"><span class="fab fa-facebook-f"></span></a>
+                            <a href="https://www.instagram.com/bazin_chez_marie/" target="_blank" class="instagram"><span class="fab fa-instagram"></span></a>
+                            <!-- Lien WhatsApp -->
+                            <a href="https://wa.me/221775449921" class="whatsapp" target="_blank"><span class="fab fa-whatsapp"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </footer>
+    <!--//footer-->
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var images = document.querySelectorAll('.gallery-item img');
+        var modalImg = document.getElementById("img01");
+
+        images.forEach(function(image) {
+            image.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
